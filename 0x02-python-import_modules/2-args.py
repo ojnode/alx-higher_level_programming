@@ -1,16 +1,17 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-import sys
-argv = sys.argv[1:]
-argv_count = len(argv)
- index = 1
-if argv_count is 0:
-print("{:d} arguments.".format(argv_count))
-elif argv_count is 1:
-print("{:d} argument:".format(argv_count))
-print("{:d}: {:s}".format(index, sys.argv[1]))
+    argStr = '{:d} argument'
+    arg = len(sts.argv) - 1
+if arg == 0:
+    argStr += 's.'
+elif arg == 1:
+    argStr += '.'
 else:
-print("{:d} arguments:".format(arg  
-while index <= argv_count:
-print("{:d}: {:s}".format(index, sys.argv[index]))
-index += 1
+    argStr += 's:'
+    print("argStr".format(arg))
+
+i = 0
+for strg in sys.argv:
+    if i != 0:
+        print("{:d}: {:s}".format(i, strg))
+    i += 1
