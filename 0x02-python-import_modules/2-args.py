@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
+    import sys
     argStr = '{:d} argument'
     arg = len(sts.argv) - 1
 if arg == 0:
